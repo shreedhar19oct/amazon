@@ -1,6 +1,6 @@
 const ProductData = {
     title: 'FitBit 19 - The Smartest Watch',
-    description: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.',
+    description: 'This Fitbit Versa smartwatch will keep a tab on your fitness goals and your style quotient. With its 15+ exercise modes, this smartwatch helps you maintain real-time stats when you’re working out. It also helps you access a variety of apps, so you can never have a dull moment anywhere. To top it off, it records your period cycle and symptoms, along with your sleep quality and activities, so you can keep a tab on your overall health.',
     colorOptions: [
         {
             styleName: 'Black Strap',

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import classes from './App.module.css'
 import ProductData from './ProductData';
+import ProductPreview from './ProductPreview';
 
 function App() {
   return (
@@ -12,15 +13,16 @@ function App() {
       </header>
 
       <div className={classes.Maincontainer}>
-        <div className={classes.Productpreview}>
-          <img src="https://imgur.com/iOeUBV7.png" alt="Product Preview" />
-          {/* <div className={classes.TimeSection}>
+        <div className={classes.ProductPreview}>
+        <ProductPreview />
+          {/* <img src="https://imgur.com/iOeUBV7.png" alt="Product Preview" />
+          <div className={classes.TimeSection}>
             <p>{new Date().getHours()}:{new Date().getMinutes()}</p>
-          </div> */}
+          </div>
           <div className={classes.HeartBeatSection}>
             <i class="fa-solid fa-heart-pulse"></i>
             <p>78</p>
-          </div>
+          </div> */}
         </div>
         <div className={classes.ProductData}>
           <h1 className={classes.ProductTitle}>{ProductData.title}</h1>
