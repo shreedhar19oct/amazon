@@ -1,13 +1,16 @@
 import react, {Component, component} from 'react';
 import classes from './App.module.css'
-import ProductPreview from './ProductPreview';
-import ProductDetails from './productDetails';
-import ProductData from './ProductData';
+import ProductPreview from './ProductPreview/ProductPreview';
+import ProductDetails from './ProductDetails/productDetails';
+import ProductData from './utils/ProductData';
 
 class App extends Component {
 
   state = {
-    productData: ProductData
+    productData: ProductData,
+    currentPreviewImage: 'https://imgur.com/iOeUBV7.png',
+    showHeartBeatSection: false,
+
   }
 
   render() {
@@ -21,7 +24,8 @@ class App extends Component {
 
       <div className={classes.Maincontainer}>
         <div className={classes.ProductPreview}>
-        <ProductPreview />
+        <ProductPreview currentPreviewImage={this.state.currentPreviewImage}
+        showHeartBeatSection={this.state.showHeartBeatSection} />
         </div>
 
         <div className={classes.ProductData}>
